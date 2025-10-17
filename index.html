@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="navbar">
+      <!-- Burger icon -->
+      <div class="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navmenu">
+        <li><a href="#hero" onclick="closeMenu()">Accueil</a></li>
+        <li><a href="#about" onclick="closeMenu()">A-propos</a></li>
+        <li><a href="#projets" onclick="closeMenu()">Projets</a></li>
+        <li><a href="#formation" onclick="closeMenu()">Formation</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <section id="hero">
+    <div id="image">
+      <img src="/resources/img/ayman-pic.png" alt="">
+    </div>
+    <div id="info">
+      <h1>Ayman Zariouh</h1><br>
+      <p>future full-stack devellopeur / marketeur</p><br>
+      <p>etudiants passione par le development web et la creation d'experiences utilisateur exeptioneles</p>
+    </div>
+    <div id="socials">
+      <div id="button-socials"><a href="mailto:aymanezaroiuh@gmail.com">📧 Email</a></div>
+      <div id="button-socials"><a href="https://www.linkedin.com/in/aymane-zariouh-13b6552a4/">💼 LinkedIn</a></div>
+      <div id="button-socials"><a href="https://github.com/">🐙 GitHub</a></div>
+      <div id="button-socials"><a href="">📄 CV</a></div>
+    </div>
+    </section>
+    
+    <section class="about-me" id="about">
+      <h1 id="prp"> A propos de moi </h1>
+      <section class="a-propos">
+      <div id="image2">
+        <img src="./resources/img/ayman-pic2.JPG" alt="">
+      </div>
+        
+      <div id="para">
+        <p>Diplômé en marketing, j'ai choisi de poursuivre ma passion pour le développement web en intégrant YouCode Nador, une école reconnue pour sa pédagogie pratique et orientée projet. Curieux, motivé et passionné par la création numérique, j'aime concevoir des interfaces modernes et intuitives tout en cherchant à améliorer constamment mes compétences techniques. Mon objectif est de combiner mes connaissances en marketing et en développement pour créer des solutions digitales à la fois performantes et centrées sur l'utilisateur.</p>
+      </div>
+      </section>
+      <div class="mescompetence">
+        <h1 id="mcmp">mes compétences</h1>
+        <div class="skill">
+        <span class="skillname">Html</span>
+        <div class="bar">
+          <div class="fill" style="--value: 80%;"></div>
+        </div>
+        </div>
+      
+        <div class="skill">
+        <span class="skillname">Css</span>
+        <div class="bar">
+          <div class="fill" style="--value: 60%;"></div>
+        </div>
+        </div>
+      
+        <div class="skill">
+        <span class="skillname">C</span>
+        <div class="bar">
+          <div class="fill" style="--value: 75%;"></div>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    <section class="mes-projets" id="projets">
+  <h1>mes projets</h1>
+
+  <div class="projet" id="projet-1">
+    <div class="projet-img">
+      <img src="./resources/img/ayman-pic2.JPG" alt="image projet 1">
+    </div>
+    <div class="projet-info">
+      <h2>description du projet</h2>
+      <div id="bottom">
+      <div id="bottom-img">
+        <img src="./resources/img/css-3.png" alt="">
+        <img src="./resources/img/html.png" alt="">
+        <img src="./resources/img/letter-c.png" alt="">
+      </div>
+      <a href="https://github.com/" class="github">lien github</a>
+    </div>
+    </div>
+  </div>
+
+  <div class="projet" id="projet-2">
+    <div class="projet-img">
+      <img src="./resources/img/ayman-pic2.JPG" alt="image projet 2">
+    </div>
+    <div class="projet-info">
+      <h2>description du projet</h2>
+      <div id="bottom">
+      <div id="bottom-img">
+      <img src="./resources/img/css-3.png" alt="">
+      <img src="./resources/img/html.png" alt="">
+      <img src="./resources/img/letter-c.png" alt="">
+      </div> 
+      <a href="https://github.com/" class="github">lien github</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="projet" id="projet-3">
+    <div class="projet-img">
+      <img src="./resources/img/ayman-pic2.JPG" alt="image projet 3">
+    </div>
+    <div class="projet-info">
+      <h2>campus connect</h2>
+      <div id="bottom">
+      <div id="bottom-img">
+        <img src="./resources/img/css-3.png" alt="">
+        <img src="./resources/img/html.png" alt="">
+      </div>
+      <a href="https://github.com/" class="github">lien github</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-general" id="contact">
+  <h1> contact</h1>
+  <div class="contact11">
+      <div class="contact">
+    <div id="lien-contact">
+      <div class="adress">
+        <div>
+          <a href=""> <img id="contact-image" src="./resources/img/location.png" alt=""></a>
+        </div>
+        <div>
+          <h3>adress</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="lien-contact">
+      <div class="Email">
+        <div>
+          <a href=""> <img id="contact-image" src="./resources/img/gmail-icon.png" alt=""></a>
+        </div>
+        <div>
+          <h3>Email</h3>
+        </div>
+      </div>
+    </div>
+    
+    <div id="lien-contact">
+      <div class="telephone">
+        <div>
+          <a href=""> <img id="contact-image" src="./resources/img/phone-ringing.png" alt=""></a>
+        </div>
+        <div>
+          <h3>telephone</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="formulaire">
+      <form action="post">
+        <h2>contacter nous !</h2>
+        <div>
+          <div class="name">
+            <div>
+            <label for="">Prénom</label>
+            <input type="text">
+            </div>
+            <div>
+            <label for="">Nom</label>
+            <input type="text">
+            </div>
+          </div>
+        </div>
+        <div>
+        <label id="line1" for="">Email</label>
+        <input type="email">
+        </div>
+        <div>
+        <label>Message</label>
+        <textarea name="Message" id=""></textarea>
+        </div>
+        <button type="submit"> 
+          Envoyer
+        </button>
+        </form>
+      </div>
+  </div>
+</section>
+  </main>
+  
+    <footer>
+        <p>&copy; 2025 ayman Zariouh. Tous droits réservés.</p>
+        <p>Fait par ayman-pic</p>
+    </footer>
+    
+   <script>
+
+
+ function toggleMenu() {
+            var navMenu = document.querySelector('.navmenu');
+            var burger = document.querySelector('.burger');
+            navMenu.classList.toggle('active');
+            burger.classList.toggle('active');
+        }
+        function closeMenu() {
+           var navMenu = document.querySelector('.navmenu');
+            var burger = document.querySelector('.burger');
+            navMenu.classList.remove('active');
+            burger.classList.remove('active');
+        }
+
+
+</script>
+
+
+  </body>
+</html>
