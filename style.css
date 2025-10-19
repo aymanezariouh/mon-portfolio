@@ -57,16 +57,43 @@ body {
     padding-right: 1em;
 }
 
-#image {
+#hero #image {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    position: relative ; 
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
 }
 
-img {
+#hero #image img {
+    position: absolute;
     border-radius: 100%;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hover-img {
+  opacity: 0;
+}
+
+#hero  #image:hover img{
+  transform: translate(3px , -3px);
+  transition: 0.5s ease-in;
+  
+}
+
+
+#image:hover .hover-img{
+  opacity: 1;
+}
+
+#image:hover img:nth-child(2){
+
+  opacity: 0;
+
 }
 
 #info {
@@ -121,6 +148,13 @@ img {
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
+}
+
+
+.a-propos img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .a-propos p {
@@ -199,6 +233,11 @@ img {
     padding: 2rem;
     width: 90%;
 }
+.projet:hover{
+  scale: 1.1;
+  transition:all 0.3s ease-in;
+  box-shadow: 5px 5px 30px 5px #ffffff ;
+}
 
 #projet-2 {
     flex-direction: row-reverse;
@@ -225,10 +264,12 @@ img {
     gap: 1em;
     align-items: center;
     border: 1px solid rgb(0, 0, 0);
-    background: #051a08;
     border-radius: 25px;
     padding: 0.2em 0.5em;
     box-shadow: #051a08 4px 4px 4px;
+}
+#bottom-img img{
+  border-radius: 5px;
 }
 
 .projet-info {
@@ -254,9 +295,29 @@ img {
 }
 
 .github {
+  overflow: hidden;
+  position: relative;
+  padding:5px 15px;
+  border: 1px solid black;
+  border-radius: 20px;
     color: black;
     text-decoration: underline;
     font-weight: 500;
+
+}
+.github::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: yellowgreen;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+.github:hover::before{
+  width: 100%;
 }
 
 .contact-general {
